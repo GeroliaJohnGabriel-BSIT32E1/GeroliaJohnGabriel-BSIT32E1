@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- CSS STYLESHEET -->
+    <style>
+        body {
+        background-color: lightblue;
+      }
+      h1,h2,h3 {
+        padding: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+      li {
+        list-style-type: Disc;
+      }
+    </style>
+</head>
+<body>
+    <h1>Welcome to...</h1>
+    <p>This is a paragraph...</p>
+    <img src="ew.jpg" alt="Description of the image" />
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+      <p>
+        This is a <a href="https://github.com/GeroliaJohnGabriel-BSIT32E1">link</a> to an
+        external website.
+      </p>
+      <h3 style="color: blue">Heading 3</h3>
+      <button onclick="checkNumber()">Check Number</button>
+      <p id="result"></p>
+  
+    <!-- JAVASCRIPT  -->
+    <script>
+        function checkNumber() {
+          var number = parseInt(prompt("Enter a number:"));
+          if (isNaN(number)) {
+            document.getElementById("result").textContent =
+              "Please enter a valid number.";
+          } else {
+            if (number % 2 === 0) {
+              document.getElementById("result").textContent =
+                number + " is even.";
+            } else {
+              document.getElementById("result").textContent = number + " is odd.";
+            }
+          }
+        }
+      </script>
+</body>
+</html>
